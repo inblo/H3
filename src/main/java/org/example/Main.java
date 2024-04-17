@@ -4,9 +4,9 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Student(1, "1", "1", "1");
-        Student student2 = new Student(2, "2", "2", "2");
-        Student student3 = new Student(3, "3", "3", "3");
+        Student student1 = new Student(3, "1", "1", "1");
+        Student student2 = new Student(1, "2", "2", "2");
+        Student student3 = new Student(2, "3", "3", "3");
         StudentGroup studentGroup1 = new StudentGroup();
         studentGroup1.add(student1);
         studentGroup1.add(student2);

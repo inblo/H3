@@ -1,41 +1,26 @@
 package org.example;
 
-public class Student implements Comparable<Student>{
+public class Student extends User implements Comparable<Student>{
     private Integer studentID;
-    private String firstName;
-    private String secondName;
-    private String lastName;
+
 
     public Student(Integer studentID, String firstName, String secondName, String lastName) {
+        super(firstName, secondName, lastName);
         this.studentID = studentID;
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.lastName = lastName;
     }
 
     public int getStudentID() {
         return studentID;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
 
     @Override
     public String toString() {
         return "Student{" +
                 "studentID=" + studentID +
-                ", firstName='" + firstName + '\'' +
-                ", secondName='" + secondName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", firstName='" + super.getFirstName() + '\'' +
+                ", secondName='" + super.getSecondName() + '\'' +
+                ", lastName='" + super.getLastName() + '\'' +
                 '}';
     }
 
